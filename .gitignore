@@ -66,4 +66,4 @@ target/
 # Temporary Files
 *~
 \#*
-cython.dat
+cythonize.dat
