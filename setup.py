@@ -1,4 +1,5 @@
 # Setup script for cython template
+# Adapted from scikit-learn setup.py script (BSD-licensed)
 
 import io
 import os

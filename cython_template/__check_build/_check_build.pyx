@@ -1,4 +1,4 @@
-# LICENSE: Simplified BSD https://github.com/mmp2/megaman/blob/master/LICENSE
+# Adapted from scikit-learn __check_build script (BSD-licensed)
 
 def check_build():
     return

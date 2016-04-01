@@ -1,3 +1,5 @@
+# Adapted from scikit-learn __check_build script (BSD-licensed)
+
 import numpy
 
 
