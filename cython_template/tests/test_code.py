@@ -1,4 +1,4 @@
-from cython_template.code import example_function
+from cython_template.example_code import example_function
 
 
 def test_example_function():
