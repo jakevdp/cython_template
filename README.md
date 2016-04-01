@@ -21,5 +21,5 @@ a few nice features:
   from the source directory without first building/compiling the cython
   sources.
 
-This repository has a very permissive BSD license: please use the contents to
-help setup your own cython-driven packages!
+This repository has a very permissive BSD license: please feel free to
+use the contents to help set up your own cython-driven packages!
