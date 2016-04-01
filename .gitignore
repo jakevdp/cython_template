@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+*.c
+*.cxx
 
 # Distribution / packaging
 .Python
@@ -58,5 +60,10 @@ docs/_build/
 # PyBuilder
 target/
 
-#Ipython Notebook
+# IPython Notebook
 .ipynb_checkpoints
+
+# Temporary Files
+*~
+\#*
+cython.dat

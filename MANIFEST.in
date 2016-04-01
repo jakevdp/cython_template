@@ -1,0 +1,5 @@
+include *.md
+include *.py
+recursive-include cython_template *.py *.pyx *.pxd
+recursive-include tools *.py
+include LICENSE
