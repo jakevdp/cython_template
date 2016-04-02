@@ -5,8 +5,6 @@ Cythonize pyx files into C files as needed.
 
 Usage: cythonize [root_dir]
 
-Default [root_dir] is 'sklearn'.
-
 Checks pyx files to see if they have been changed relative to their
 corresponding C files.  If they have, then runs cython on these files to
 recreate the C files.
@@ -34,6 +32,8 @@ files.
 # Author: Raghav R V <rvraghav93@gmail.com>
 #
 # License: BSD 3 clause
+# see http://github.com/scikit-learn/scikit-learn
+
 
 from __future__ import division, print_function, absolute_import
 
@@ -44,7 +44,7 @@ import hashlib
 import subprocess
 
 HASH_FILE = 'cythonize.dat'
-DEFAULT_ROOT = 'sklearn'
+
 
 # WindowsError is not defined on unix systems
 try:
@@ -186,7 +186,7 @@ def check_and_cythonize(root_dir):
                 save_hashes(hashes, HASH_FILE)
 
 
-def main(root_dir=DEFAULT_ROOT):
+def main(root_dir):
     check_and_cythonize(root_dir)
 
 
@@ -194,5 +194,5 @@ if __name__ == '__main__':
     try:
         root_dir_arg = sys.argv[1]
     except IndexError:
-        root_dir_arg = DEFAULT_ROOT
+        raise ValueError("Usage: python cythonize.py <root_dir>")
     main(root_dir_arg)
