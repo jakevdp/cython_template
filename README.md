@@ -5,7 +5,8 @@
 
 This is a package template for a Python project using Cython. There are many
 different ways to build cython extensions within a project, as seen in the
-[Cython documentation](http://docs.cython.org/src/quickstart/build.html).
+[Cython documentation](http://docs.cython.org/src/quickstart/build.html), but
+the best way to integrate Cython into a distributed package is not always clear.
 
 This template borrows utility scripts used in the [scipy](http://scipy.org)
 and [scikit-learn](http://scikit-learn.org) projects, which give the template
